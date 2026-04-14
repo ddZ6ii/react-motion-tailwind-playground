@@ -1,5 +1,7 @@
+import { Basics } from '@/basics'
+
 function App() {
-  return <div>Hello world</div>
+  return <Basics />
 }
 
 export default App

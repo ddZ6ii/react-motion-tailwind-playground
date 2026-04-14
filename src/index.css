@@ -114,6 +114,10 @@
   * {
     @apply border-border outline-ring/50;
   }
+  html {
+    /* Fix runtime warning "Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly" */
+    @apply relative;
+  }
   body {
     @apply bg-background text-foreground;
   }
