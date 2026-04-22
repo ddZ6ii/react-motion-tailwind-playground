@@ -10,7 +10,7 @@ function Root({
     <motion.section
       {...props}
       className={cn(
-        '@container/section container mx-auto grid h-full grid-rows-[auto_1fr] gap-6',
+        '@container/section grid h-full grid-rows-[auto_1fr] gap-6',
         className,
       )}
     />

@@ -54,7 +54,7 @@ function KeepScrolling() {
 
   return (
     <Container className="overflow-x-hidden bg-linear-to-b from-[#010102] via-[#055a81] to-[#010102] text-slate-100">
-      <Section ref={sectionRef}>
+      <Section ref={sectionRef} className="container mx-auto">
         <Section.Title
           animate={controls}
           variants={TITLE_VARIANTS}
@@ -63,7 +63,10 @@ function KeepScrolling() {
           Keep Scrolling
         </Section.Title>
 
-        <Section.Content ref={sectionContentRef}>
+        <Section.Content
+          ref={sectionContentRef}
+          className="place-content-center"
+        >
           <ArtworkList artworks={ARTWORKS} scrollYProgress={scrollYProgress} />
         </Section.Content>
       </Section>

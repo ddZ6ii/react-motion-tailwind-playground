@@ -42,6 +42,7 @@ function Patchwork() {
     <Container className="relative overflow-x-hidden bg-[url('/background-dark.jpg')] bg-cover bg-center bg-no-repeat text-slate-100">
       <Section
         ref={sectionRef}
+        className="container mx-auto"
         variants={CONTAINER_VARIANTS}
         initial="hidden"
         animate="visible"
