@@ -1,8 +1,8 @@
 import { motion } from 'motion/react'
 
-import { cn } from '@/shared/lib/utils'
+import { cn } from '@/shared/utilities'
 
-function Skeleton({
+export default function Skeleton({
   className,
   ...props
 }: React.ComponentProps<typeof motion.div>) {
@@ -27,5 +27,3 @@ function Skeleton({
     />
   )
 }
-
-export { Skeleton }
